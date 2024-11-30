@@ -42,6 +42,14 @@ export default defineConfig({
 					]
 				},
 				{
+					label: 'Framework Learning Resources',
+					items: [
+					  { label: 'Essential 8 Framework', link: '/guides/frameworks/e8' },
+					  { label: 'NIST Cybersecurity Framework', link: '/guides/frameworks/nist' },
+					  { label: 'MITRE ATT&CK Framework', link: '/guides/frameworks/mitre' }
+					]
+				  },
+				{
 					label: 'Miscellaneous',
 					items: [
 						{
