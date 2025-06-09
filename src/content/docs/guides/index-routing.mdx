@@ -29,6 +29,24 @@ import Footer from '../../../components/credits.astro'
 />
 
 <LinkCard
+  title="OWASP Zap"
+  description="Understand OWASP Zap"
+  href="/guides/pentest/owasp-zap"
+/>
+
+<LinkCard
+  title="Nikto"
+  description="Understanding Nikto"
+  href="/guides/pentest/nikto"
+/>
+
+<LinkCard
+  title="Nmap"
+  description="Understanding Nmap"
+  href="/guides/pentest/nmap"
+/>
+
+<LinkCard
   title="Practice & Additional Resources"
   description="Practice paths, additional resource and roadmanps for cyber security"
   href="/guides/pentest/practice-additional-resources"
@@ -42,11 +60,28 @@ import Footer from '../../../components/credits.astro'
   <LinkCard title="What is Secure Code Review ?" 
   description="Understanding what secure code review is and what techniques are involved" href="/guides/secure-code-review/what-is-secure-code-review" />
 
+  <LinkCard title="Codeforces"
+  description="Practice Coding"
+  href="/guides/secure-code-review/codeforces" />
+  
+  <LinkCard title="Snyk"
+  description="Secure Code"
+  href="/guides/secure-code-review/snyk" />
+  
+  <LinkCard title="CodeQL"
+  description="Secure Code"
+  href="/guides/secure-code-review/codeql" />
+  
   <LinkCard title="Learning Resource" 
   description="Learning resources for Secure Code Review"
   href="/guides/other-resources/miscellaneous" />
 </CardGrid>
 
+## Tool Development Learning Resources
+
+<LinkCard title="?" 
+  description="" href=""/>
+  
 # Miscellaneous
 
   <LinkCard title="Miscellaneous" 
@@ -54,6 +89,33 @@ import Footer from '../../../components/credits.astro'
 
 ---
 
+## Framework Learning Resources 
+
+<CardGrid stagger>
+  {/* Link for Essential 8 Framework */}
+  <LinkCard
+    title="Essential 8 Framework"
+    description="Learn about the Essential 8 Framework for cybersecurity."
+    href="/guides/frameworks/e8" 
+  />
+  
+  {/* Link for NIST Framework */}
+  <LinkCard
+    title="NIST Cybersecurity Framework"
+    description="Explore the NIST Cybersecurity Framework."
+    href="/guides/frameworks/nist" 
+  />
+  
+  {/* Link for MITRE Framework */}
+  <LinkCard
+    title="MITRE ATT&CK Framework"
+    description="Understand the MITRE ATT&CK framework for cybersecurity."
+    href="/guides/frameworks/mitre" 
+  />
+</CardGrid>
+
+---
+
+
 <Footer />
 
-{/* Charanpreet: https://github.com/xOscarCodes */}

@@ -143,6 +143,27 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"guides/frameworks/e8.mdx": {
+	id: "guides/frameworks/e8.mdx";
+  slug: "guides/frameworks/e8";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/frameworks/mitre.mdx": {
+	id: "guides/frameworks/mitre.mdx";
+  slug: "guides/frameworks/mitre";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/frameworks/nist.mdx": {
+	id: "guides/frameworks/nist.mdx";
+  slug: "guides/frameworks/nist";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "guides/index-routing.mdx": {
 	id: "guides/index-routing.mdx";
   slug: "guides/index-routing";
@@ -153,6 +174,13 @@ declare module 'astro:content' {
 "guides/other-resources/miscellaneous.mdx": {
 	id: "guides/other-resources/miscellaneous.mdx";
   slug: "guides/other-resources/miscellaneous";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/pentest/Owasp-zap.mdx": {
+	id: "guides/pentest/Owasp-zap.mdx";
+  slug: "guides/pentest/owasp-zap";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -178,6 +206,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"guides/pentest/nikto.mdx": {
+	id: "guides/pentest/nikto.mdx";
+  slug: "guides/pentest/nikto";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/pentest/nmap.mdx": {
+	id: "guides/pentest/nmap.mdx";
+  slug: "guides/pentest/nmap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "guides/pentest/practice-additional-resources.mdx": {
 	id: "guides/pentest/practice-additional-resources.mdx";
   slug: "guides/pentest/practice-additional-resources";
@@ -185,6 +227,55 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"guides/pentest/resources/blogs/README.md": {
+	id: "guides/pentest/resources/blogs/README.md";
+  slug: "guides/pentest/resources/blogs/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"guides/pentest/resources/free-courses/README.md": {
+	id: "guides/pentest/resources/free-courses/README.md";
+  slug: "guides/pentest/resources/free-courses/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"guides/pentest/resources/github-repositories/oscp-prep/README.md": {
+	id: "guides/pentest/resources/github-repositories/oscp-prep/README.md";
+  slug: "guides/pentest/resources/github-repositories/oscp-prep/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"guides/pentest/resources/github-training/pull-requests/README.md": {
+	id: "guides/pentest/resources/github-training/pull-requests/README.md";
+  slug: "guides/pentest/resources/github-training/pull-requests/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"guides/pentest/resources/github-training/repository-management/README.md": {
+	id: "guides/pentest/resources/github-training/repository-management/README.md";
+  slug: "guides/pentest/resources/github-training/repository-management/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"guides/pentest/resources/github-training/youtube-playlist/README.md": {
+	id: "guides/pentest/resources/github-training/youtube-playlist/README.md";
+  slug: "guides/pentest/resources/github-training/youtube-playlist/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"guides/pentest/resources/youtube-channels/README.md": {
+	id: "guides/pentest/resources/youtube-channels/README.md";
+  slug: "guides/pentest/resources/youtube-channels/readme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "guides/pentest/test.md": {
 	id: "guides/pentest/test.md";
   slug: "guides/pentest/test";
@@ -192,9 +283,30 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"guides/secure-code-review/codeforces.mdx": {
+	id: "guides/secure-code-review/codeforces.mdx";
+  slug: "guides/secure-code-review/codeforces";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/secure-code-review/codeql.mdx": {
+	id: "guides/secure-code-review/codeql.mdx";
+  slug: "guides/secure-code-review/codeql";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "guides/secure-code-review/learning-resources.mdx": {
 	id: "guides/secure-code-review/learning-resources.mdx";
   slug: "guides/secure-code-review/learning-resources";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/secure-code-review/snyk.mdx": {
+	id: "guides/secure-code-review/snyk.mdx";
+  slug: "guides/secure-code-review/snyk";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -230,5 +342,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("./../src/content/config.js");
+	export type ContentConfig = typeof import("../src/content/config.js");
 }

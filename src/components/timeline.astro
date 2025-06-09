@@ -26,17 +26,39 @@ import "../style/timeline.scss";
       <div class="timestamp">
         <span>Trimester T1 2024</span>
       </div>
+      <div class="status completed">
+        <span>Ontrack from Thoth Tech</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="timestamp">
+        <span>Trimester T2 2024</span>
+      </div>
+      <!-- Added 'highlight' class to apply yellow border -->
+      <div class="status highlight">
+        <span>Project ECHO from DataBytes</span>
+      </div>
+    </div>
+    <!-- Added T3 2024 -->
+    <div class="swiper-slide">
+      <div class="timestamp">
+        <span>Trimester T3 2024</span>
+      </div>
       <div class="status">
-        <span>Ontrack from  Thoth Tech</span>
+        <span>Gopher Guardian, Databytes AMS</span>
       </div>
     </div>
   </div>
 </div>
 
-
 <style>
   :global([data-theme="light"]) .completed span:before {
     border: 3px solid rgb(245, 199, 61) !important;
+  }
+
+  :global([data-theme="light"]) .highlight span:before {
+    border: 3px solid rgb(245, 199, 61) !important;
+    /* Ensures the yellow border is applied for T2 2024 */
   }
 
   :global([data-theme="light"]) .timeline:before {

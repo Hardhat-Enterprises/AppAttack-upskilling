@@ -18,6 +18,10 @@ export default defineConfig({
 						{ label: 'Installing VirtualBox and Pentest Distro', link: '/guides/pentest/installing-vm' },
 						{label: 'Getting Started', link: '/guides/pentest/getting-started'},
 						{label: 'Burp Suite', link: '/guides/pentest/burp-suite'},
+						{label: 'OWASP Zap', link: '/guides/pentest/owasp-zap'},
+						{label: 'Nikto', link: '/guides/pentest/nikto'},
+						{label: 'Nmap', link: '/guides/pentest/nmap'},
+
 						{label: 'Practice & Additional Resources', link: '/guides/pentest/practice-additional-resources'}
 					]
 				},
@@ -25,9 +29,26 @@ export default defineConfig({
 					label: 'Secure Code Review Learning Resource',
 					items: [
 						{ label: 'What is Secure Code Review ?', link: '/guides/secure-code-review/what-is-secure-code-review' },
+						{ label: 'Codeforces', link: '/guides/secure-code-review/codeforces' },
+						{ label: 'Snyk', link: '/guides/secure-code-review/snyk' },
+						{ label: 'CodeQL', link: '/guides/secure-code-review/codeql' },
 						{ label: 'Learning Resources', link: '/guides/secure-code-review/learning-resources' }
 					]				
 				},
+				{
+					label: 'Tool Development',
+					items: [
+						{label: 'Additional Resources', link: '/guides/tooldev/'}
+					]
+				},
+				{
+					label: 'Framework Learning Resources',
+					items: [
+					  { label: 'Essential 8 Framework', link: '/guides/frameworks/e8' },
+					  { label: 'NIST Cybersecurity Framework', link: '/guides/frameworks/nist' },
+					  { label: 'MITRE ATT&CK Framework', link: '/guides/frameworks/mitre' }
+					]
+				  },
 				{
 					label: 'Miscellaneous',
 					items: [
