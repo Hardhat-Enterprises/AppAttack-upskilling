@@ -143,6 +143,27 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"guides/frameworks/e8.mdx": {
+	id: "guides/frameworks/e8.mdx";
+  slug: "guides/frameworks/e8";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/frameworks/mitre.mdx": {
+	id: "guides/frameworks/mitre.mdx";
+  slug: "guides/frameworks/mitre";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"guides/frameworks/nist.mdx": {
+	id: "guides/frameworks/nist.mdx";
+  slug: "guides/frameworks/nist";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "guides/index-routing.mdx": {
 	id: "guides/index-routing.mdx";
   slug: "guides/index-routing";
@@ -321,5 +342,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("./../src/content/config.js");
+	export type ContentConfig = typeof import("../src/content/config.js");
 }
