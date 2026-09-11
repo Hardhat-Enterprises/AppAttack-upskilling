@@ -1,0 +1,61 @@
+---
+title: Understanding Labels and Project Boards
+author: shaharyarnadeem
+---
+{/* Components*/}
+import Footer from '../../../../../components/credits.astro'
+
+## Understanding Labels and Project Boards
+
+Labels and project boards are how the team tracks every finding's progress without anyone needing to manually move files around. This guide explains what each one means and when to use it.
+
+### Why this matters
+
+The repository's folder structure (`findings/`, `ready-for-final-report/`, `qa-failed/`) is updated **automatically** by GitHub Actions, based on the labels and statuses you set on a pull request. If you skip these steps, your finding can get stuck — it won't move through the pipeline correctly, even if the file itself is uploaded fine.
+
+## Workflow Labels
+
+Only **one** of these two labels should be on a PR at any time. Adding the other one automatically removes the previous one.
+
+| Label | Meaning |
+|---|---|
+| `work-in-progress` | You're still writing or editing the finding. Not ready for anyone to review yet. |
+| `ready-for-review` | You've finished the finding and it's ready for a reviewer to assess. |
+
+**When to switch:**
+- Start a new finding → `work-in-progress`
+- Finished writing → switch to `ready-for-review`
+- Reviewer requests changes → switch back to `work-in-progress`
+- Changes addressed → switch back to `ready-for-review`
+
+## Project Boards
+
+Every finding PR should be added to **two** project boards:
+
+1. **The project-specific board** (e.g. *AppAttack Report Tracker*) — tracks findings for the specific client project you're testing.
+2. **AppAttack File Tracker** — the central board tracking every finding across all projects and trimesters.
+
+### Adding a PR to a board
+In the PR sidebar, find the **Projects** section, click the gear icon, and select the relevant board(s) from the list.
+
+### Updating status
+
+Once added, each board shows a **Status** field on your PR, matching the actual pipeline columns on the "Pentesting Workflow" board:
+
+| Status | Meaning |
+|---|---|
+| **Work In Progress** | Actively being worked on. |
+| **Ready For Review** | Finished and waiting on a reviewer. |
+| **Feed Back To Be Addressed** | A reviewer has left comments or requested changes — see [Handling Reviewer Feedback](../how-to-address-reviewer-feedback/how-to-address-reviewer-feedback). |
+| **Ready For Final Report** | Approved and ready to be pulled into the final report. |
+| **QA Failed** | Rejected — invalid or duplicate finding. |
+| **Archived** | Completed and closed out. |
+
+Keep this field updated as your finding moves through the pipeline — it's what lets reviewers and team leads see the overall picture without opening every PR individually.
+
+## What NOT to touch
+
+Leave the **Assignees** field on the PR empty. This is intentional — do not assign yourself or anyone else, regardless of what label or board status you're setting.
+Leave the **Ready for Final Report** status. Authorised reviewers will adjust this accordingly.
+
+<Footer />
