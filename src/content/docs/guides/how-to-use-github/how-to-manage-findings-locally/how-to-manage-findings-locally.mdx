@@ -1,0 +1,56 @@
+---
+title: How to Manage a Finding from Your Computer (Git CLI)
+author: shaharyarnadeem
+---
+{/* Components*/}
+import Footer from '../../../../../components/credits.astro'
+
+## Managing a Finding Locally with Git
+
+This is an alternative to uploading files through the GitHub website — useful if you already have your LaTeX report and screenshots organised in a folder on your computer and want to push them directly using Git.
+
+:::note[Video Walkthrough]
+A student-recorded walkthrough of this exact process is available here: [Pull Request Tutorial from Mason Weaver (Deakin sign-in required)](https://deakin365-my.sharepoint.com/personal/s223402155_deakin_edu_au/_layouts/15/stream.aspx?id=%2Fpersonal%2Fs223402155%5Fdeakin%5Fedu%5Fau%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FPull%20Request%20Tutorial%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E620e4688%2D2367%2D4629%2D8342%2Dabf958284e1d&ct=1789088365427&or=Teams%2DHL&ga=1)
+:::
+
+### 1. Prepare your local folder
+Have a folder on your computer ready containing your finding's files — your LaTeX report and any supporting screenshots.
+
+### 2. Get the repository's clone URL
+On GitHub, go to the repository's main page, click the green **Code** button, and copy the HTTPS (or SSH) URL shown there.
+
+### 3. Clone the repository
+Open a terminal / command prompt and run:
+```bash
+git clone <paste-the-URL-here>
+```
+This downloads the full repository to your computer. `cd` into the new folder it creates.
+
+### 4. List all remote branches
+If a branch for your finding already exists (e.g. because you started it via the website), find it with:
+```bash
+git branch -a
+```
+This lists every branch, including remote ones under `remotes/origin/...`.
+
+### 5. Check out your branch and track it
+Once you've found your branch name in the list, check it out locally while linking it to the remote version:
+```bash
+git checkout --track origin/<branch-name>
+```
+This creates a local branch that stays linked to the matching branch on GitHub, so future `git push` and `git pull` commands know where to sync.
+
+### 6. Add your finding files
+Copy your LaTeX report and screenshots into the correct `findings/` folder for your project inside the cloned repository.
+
+### 7. Stage, commit, and push
+```bash
+git add .
+git commit -m "Add finding: <short description>"
+git push
+```
+
+### 8. Continue on GitHub as usual
+Go back to the repository on GitHub — your pushed branch will already have a pull request open if one existed, or you can open a new one from it. From there, apply the correct workflow label, add it to the project boards, and leave assignees untouched, same as the browser-based process.
+
+<Footer />
