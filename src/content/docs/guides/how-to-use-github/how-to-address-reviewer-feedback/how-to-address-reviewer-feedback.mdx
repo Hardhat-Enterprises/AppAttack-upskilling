@@ -1,0 +1,40 @@
+---
+title: How to Handle Reviewer Feedback on a Pull Request
+author: shaharyarnadeem
+---
+{/* Components*/}
+import Footer from '../../../../../components/credits.astro'
+
+## Handling Reviewer Feedback on a Pull Request
+
+Once your finding's pull request is marked `ready-for-review`, a reviewer will check it and may leave comments or request changes. This guide covers what to do next.
+
+### 1. Read the reviewer's comments
+Open your pull request and go to the **Conversation** or **Files changed** tab. Reviewer comments may appear as general PR comments, or as inline comments attached to specific lines in your files.
+
+### 2. Switch the label back to work-in-progress
+If changes are needed, update the PR's label from `ready-for-review` back to `work-in-progress` so it's clear to the team you're actively working on it again.
+
+### 3. Make the requested changes
+Depending on how you originally submitted:
+- **Via the browser:** navigate to the file in question on your branch, click the pencil (edit) icon, make the changes, and commit directly to the same branch.
+- **Via Git locally:** make the changes in your local copy of the repo, then:
+```bash
+git add .
+git commit -m "Address review feedback: <short description>"
+git push
+```
+
+### 4. Confirm the PR updated automatically
+You don't need to open a new pull request — any new commits pushed to the same branch automatically appear on the existing PR. Refresh the PR page to confirm your latest commit is showing.
+
+### 5. Reply to review comments
+If the reviewer left specific comments, reply directly under each one to confirm what you changed, or explain your reasoning if you disagree. This keeps the conversation clear for both of you.
+
+### 6. Mark the label back to ready-for-review
+Once you've addressed everything, switch the label from `work-in-progress` back to `ready-for-review` so the reviewer knows it's ready to look at again.
+
+### 7. Update the project board status
+If your project board tracks review stages (e.g. "In Review," "Changes Requested," "Ready For Review"), update the status field to reflect where the finding is now.
+
+<Footer />
