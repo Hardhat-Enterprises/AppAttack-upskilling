@@ -1,0 +1,33 @@
+---
+title: OWASP Top 10
+author: shaharyarnadeem
+---
+
+## What is the OWASP Top 10?
+
+The **OWASP Top 10** is a standard awareness document published by the Open Web Application Security Project (OWASP), representing a broad consensus on the most critical security risks facing web applications. It has been a central reference in application security for over two decades, updated roughly every three to four years based on real-world vulnerability data and community contributions.
+
+The current edition is **OWASP Top 10:2025**, released in November 2025, which shifted focus toward systemic and root-cause issues rather than isolated coding mistakes.
+
+### The OWASP Top 10:2025 List
+
+- **A01:2025 – Broken Access Control**: Users able to see or do things they shouldn't — one of the leading causes of real-world data breaches.
+- **A02:2025 – Security Misconfiguration**: Insecure default settings, unnecessary features enabled, or missing hardening.
+- **A03:2025 – Software Supply Chain Failures**: Risks introduced through dependencies, third-party libraries, and build pipelines (new category for 2025).
+- **A04:2025 – Cryptographic Failures**: Weak, missing, or misused cryptography leading to exposure of sensitive data.
+- **A05:2025 – Injection**: Untrusted data sent to an interpreter as part of a command or query (SQL injection, command injection, etc.).
+- **A06:2025 – Insecure Design**: Security flaws stemming from the application's design and architecture, not just its implementation.
+- **A07:2025 – Authentication Failures**: Weaknesses in how identity is verified, session management, and credential handling.
+- **A08:2025 – Software or Data Integrity Failures**: Code and infrastructure that don't protect against integrity violations (e.g. insecure deserialization, unsigned updates).
+- **A09:2025 – Security Logging and Alerting Failures**: Ineffective or missing monitoring that lets attacks go unnoticed until real damage is done.
+- **A10:2025 – Mishandling of Exceptional Conditions** (new): Applications that don't cope well with timeouts, overloads, or unexpected input, creating openings for attackers.
+
+### Why Use the OWASP Top 10?
+
+The OWASP Top 10 can be used by pentesters, developers, and reviewers for:
+
+- **Vulnerability classification**: Categorizing findings during a pentest or secure code review consistently.
+- **Prioritization**: Focusing limited time on the risk categories most likely to cause real damage.
+- **Training**: A well-established curriculum for teaching secure coding and testing fundamentals.
+
+Learn how the OWASP Top 10 can be leveraged to structure and prioritize security testing and remediation.
